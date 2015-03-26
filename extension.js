@@ -56,9 +56,9 @@
         botName: "Bot DJ",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
-        startupCap: 1, // 1-200
-        startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
+        startupCap: 200, // 1-200
+        startupVolume: 100, // 0-100
+        startupEmoji: true, // true or false
         maximumAfk: 120,
         afkRemoval: true,
         maximumDc: 60,
