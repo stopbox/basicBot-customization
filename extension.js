@@ -53,7 +53,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "Bot DJ",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         startupCap: 1, // 1-200
@@ -71,8 +71,8 @@
         voteSkip: false,
         voteSkipLimit: 10,
         timeGuard: true,
-        maximumSongLength: 10,
-        autodisable: true,
+        maximumSongLength: 6,
+        autodisable: false,
         commandCooldown: 30,
         usercommandsEnabled: true,
         lockskipPosition: 3,
@@ -89,7 +89,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: false,
         motdInterval: 5,
-        motd: "Temporary Message of the Day",
+        motd: "Great!",
         filterChat: true,
         etaRestriction: false,
         welcome: true,
@@ -110,6 +110,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.js', extend);
+    $.getScript('https://rawgit.com/Decenters/basicBot/master/basicBot.js', extend);
 
 }).call(this);
