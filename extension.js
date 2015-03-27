@@ -42,7 +42,7 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "Bot DJ",
         language: "english",
-        chatLink: "https://rawgit.com/stopbox123/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/stopbox/basicBot/master/lang/en.json",
         startupCap: 200, // 1-200
         startupVolume: 100, // 0-100
         startupEmoji: true, // true or false
