@@ -32,19 +32,6 @@
 
          */
 
-        bot.commands.baconCommand = {
-            command: 'bacon',  //The command to be called. With the standard command literal this would be: !bacon
-            rank: 'user', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    API.sendChat("/me Bacon!!!");
-                }
-            }
-        };
-
         //Load the chat package again to account for any changes
         bot.loadChat();
 
@@ -55,7 +42,7 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "Bot DJ",
         language: "english",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/stopbox123/basicBot/master/lang/en.json",
         startupCap: 200, // 1-200
         startupVolume: 100, // 0-100
         startupEmoji: true, // true or false
@@ -110,6 +97,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.js', extend);
+    $.getScript('https://rawgit.com/stopbox123/basicBot/master/basicBot.js', extend);
 
 }).call(this);
