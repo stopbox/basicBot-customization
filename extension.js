@@ -97,6 +97,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript('https://rawgit.com/stopbox123/basicBot/master/basicBot.js', extend);
+    $.getScript('https://rawgit.com/stopbox/basicBot/master/basicBot.js', extend);
 
 }).call(this);
